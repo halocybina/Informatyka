@@ -58,6 +58,7 @@ else:
     print("Liczby nie sa blizniacze")
 
 n = int(input("Podaj liczbe: "))
+
 # Sprawdzenie, czy liczba jest pierwsza
 def czy_pierwsza(n):
     if n < 2:
@@ -75,7 +76,7 @@ if czy_pierwsza(n):
 else:
     print(f"Liczba {n} nie jest pierwsza.")
 
-# 
+# suma dzielników dwóch liczb
     l1 = int(input("Podaj liczbę 1: "))
     l2 = int(input("Podaj liczbę 2: "))
     suma1 = 0
@@ -84,11 +85,11 @@ else:
         if l1%i==0:
             suma1+=i
     for i in range(1,l2):
-        if l1%i==0:
+        if l2%i==0:
             suma2+=i
 
 
-
+# Oblicz sumę cyfr liczby naturalnej n
 def suma_cyfr(n):
     suma = 0
     while n > 0:
