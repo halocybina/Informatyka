@@ -54,3 +54,44 @@ a = int(input("Podaj pierwszą liczbę: "))
 b = int(input("Podaj drugą liczbę: "))
 if pierwsza1(a) and pierwsza1(b) and abs(a-b) == 2:
    print("Liczby są bliźniacze")
+else:
+    print("Liczby nie sa blizniacze")
+
+n = int(input("Podaj liczbe: "))
+# Sprawdzenie, czy liczba jest pierwsza
+def czy_pierwsza(n):
+    if n < 2:
+        return False
+
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+if czy_pierwsza(n):
+    print(f"Liczba {n} jest pierwsza!")
+else:
+    print(f"Liczba {n} nie jest pierwsza.")
+
+# 
+    l1 = int(input("Podaj liczbę 1: "))
+    l2 = int(input("Podaj liczbę 2: "))
+    suma1 = 0
+    suma2 = 0
+    for i in range(1,l1):
+        if l1%i==0:
+            suma1+=i
+    for i in range(1,l2):
+        if l1%i==0:
+            suma2+=i
+
+
+
+def suma_cyfr(n):
+    suma = 0
+    while n > 0:
+        suma+=n%10
+        n = n // 10
+    return suma
