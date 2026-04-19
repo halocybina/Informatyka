@@ -87,3 +87,59 @@ for el in range(len(lista_randomowa)):
   if el < 5:
     el += 2
 print(lista_randomowa)
+# d) obliczenie sumy tych elementów listy, których warość jest równa 3
+iloczyn=1
+for el in lista_randomowa:
+  if el == 3:
+    iloczyn*=el
+print(iloczyn)
+# e) obliczenie średniej arytmetycznej tych elementów listy, którch numer jest podzielny przez 3
+suma=0
+for i in range(len(lista_randomowa)):
+  if i%3==0:
+    suma+=lista_randomowa[i]
+print(suma)
+
+# Napisz program wykonujący następujące operacje na liście zawierającej liczby całkowite:
+# b) obliczenie średniej artytmetycznej wszystkich elementów listy
+suma=0
+for i in range(len(lista_randomowa)):
+  suma+=lista_randomowa[i]
+srednia = suma/len(lista_randomowa)
+print(srednia)
+# c) obliczenie średniej arytmetycznej tych elementów listy, których wartość jest nieparzysta
+suma=0
+ile=0
+for i in range(len(lista_randomowa)):
+  if lista_randomowa[i]%2!=0:
+    suma+=lista_randomowa[i]
+    ile+=1
+srednia = suma/ile
+print(srednia)
+# 2.3 Napisz program wykonujący następujące operacje na 12-elementowej liście zawierającej liczby całkowite, której wartości wpisywane są z klawiatury:
+# c) zwiększenie o 2 wartości tych elemnetów listy, które mają nieparzysty numer zawarty w przedziale [3, 9]
+lista_uzytkownika=[]
+for i in range(12):
+  lista_uzytkownika.append(int(input(f"Podaj liczbę {i+1}: ")))
+
+for i in range(len(lista_uzytkownika)):
+  if i%2!=0 and i>=3 and i<=9:
+    lista_uzytkownika[i]+=2
+print(lista_uzytkownika)
+# e) obliczenie liczby tych elementów listy, których wartość nie zawiera się w przedziale [5, 8]
+ile=0
+for i in range(len(lista_uzytkownika)):
+  if lista_uzytkownika[i]<5 or lista_uzytkownika[i]>8:
+    ile+=1
+print(ile)
+
+# 2.4 Napisz program wykonujący następujące operacje na 10-elementowej liście zawierającej liczby całkowite, której wartości wpisywane są z klawiatury:
+# d) wyzerowanie tych elemnetów listy, których index jest podzielny przez 3
+lista_uzytkownika=[]
+for i in range(10):
+   lista_uzytkownika.append(int(input(f"Podaj liczbę {i+1}: ")))
+
+for i in range(len(lista_uzytkownika)):
+  if i%3==0:
+    lista_uzytkownika[i]=0
+print(lista_uzytkownika)
