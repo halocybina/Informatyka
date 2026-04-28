@@ -41,3 +41,34 @@ def czy_staly(lista):
       if lista[i] != lista[i+1]:
          return False
     return True
+
+# Sortowanie bąbelkowe
+# i = 0  1  2  3  4
+#     9, 7, 4, 2, 5
+# 1 pętla zewnętrzna
+#                     1 por 9>7  7,9,4,2,5
+# pętla wewnętrzna    2 por 9>4  7,4,9,2,5
+#                     3 por 9>2  7,4,2,9,5
+#                     4 por 9>5  7,4,2,5,9
+# 2 pętla zewnętrzna
+#                     1 por 7>4  4,7,2,5,9
+# pętla wewnętrzna    2 por 7>2  4,2,7,5,9
+#                     3 por 7>5  4,2,5,7,9
+# 3 pętla zewnętrzna
+#                     1 por 4>2  2,4,5,7,9
+# pętla wewnętrzna    2 por 4>5  2,4,5,7,9
+# 4 pętla zewnętrzna
+# pętla wewnętrzna    1 por 2>4  2,4,5,7,9
+
+def sortowanie_babelkowe(lista):
+    for i in range(len(lista)-1):
+        zmiana = False
+        for j in range(len(lista)-1-i):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+                zmiana = True
+        if not zmiana:
+             break
+    return lista
+
+print(sortowanie_babelkowe([9,7,4,2,5]))

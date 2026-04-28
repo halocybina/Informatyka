@@ -11,8 +11,9 @@ print("7. Algorytm Euklidesa")
 print("7.1. Zadanie (NWW i NWD)")
 print("8. Badanie czy liczba jest pierwsza")
 print("9. Listy - sekwencyjne typy danych")
+print("10. Liniowe porządkowanie ciągu liczbowego - sortowanie bąbelkowe")
 
-wybor = input("Twój wybór (1-9): ")
+wybor = input("Twój wybór (1-10): ")
 
 if wybor == "1":
     os.system("python3 1_etapy_rozwiązywania_problemów_za_pomocą_komputera.py")
@@ -34,5 +35,7 @@ elif wybor == "8":
     os.system("python3 8_Badanie_czy_liczba_jest_pierwsza.py")
 elif wybor == "9":
     os.system("python3 9_Listy_-_sekwencyjne_typy_danych.py")
+elif wybor == "10":
+    os.system("python3 10_Liniowe_porzadkowanie_ciagu_liczbowego_-_sortowanie_babelkowe.py")
 else:
     print("Nieprawidłowy wybór")
