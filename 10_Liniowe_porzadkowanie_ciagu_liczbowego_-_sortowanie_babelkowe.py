@@ -1,5 +1,6 @@
 # Temat: Liniowe porządkowanie ciągu liczbowego - sortowanie bąbelkowe
 # Rodzaje ciągów liczbowych:
+from subprocess import BELOW_NORMAL_PRIORITY_CLASS
 
 rosnacy = [1,2,3,4,5,6,7,8,9,10] # rosnący
 niemalejacy = [1,2,2,3,4,4,5,6,7,8,9,10] # niemalejący
@@ -72,3 +73,4 @@ def sortowanie_babelkowe(lista):
     return lista
 
 print(sortowanie_babelkowe([9,7,4,2,5]))
+

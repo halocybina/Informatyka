@@ -12,6 +12,8 @@ print("7.1. Zadanie (NWW i NWD)")
 print("8. Badanie czy liczba jest pierwsza")
 print("9. Listy - sekwencyjne typy danych")
 print("10. Liniowe porządkowanie ciągu liczbowego - sortowanie bąbelkowe")
+print("11. Sortowanie przez wstawianie")
+print("12. Algorytmy na tekstach")
 
 wybor = input("Twój wybór (1-10): ")
 
@@ -37,5 +39,9 @@ elif wybor == "9":
     os.system("python3 9_Listy_-_sekwencyjne_typy_danych.py")
 elif wybor == "10":
     os.system("python3 10_Liniowe_porzadkowanie_ciagu_liczbowego_-_sortowanie_babelkowe.py")
+elif wybor == "11":
+    os.system("python3 11_Sortownaie_przez_wstawianie.py")
+elif wybor == "12":
+    os.system("python3 12_Algorytmt_na_tekstach.py")
 else:
     print("Nieprawidłowy wybór")
