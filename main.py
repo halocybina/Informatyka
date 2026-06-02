@@ -42,6 +42,6 @@ elif wybor == "10":
 elif wybor == "11":
     os.system("python3 11_Sortownaie_przez_wstawianie.py")
 elif wybor == "12":
-    os.system("python3 12_Algorytmt_na_tekstach.py")
+    os.system("python3 12_Algorytm_na_tekstach.py")
 else:
     print("Nieprawidłowy wybór")
