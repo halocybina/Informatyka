@@ -118,4 +118,16 @@ def lustro(napis):
   return napis + wspak(napis)
 print(lustro("aster"))
 
-# Zdefiniuj funkcję przeplot(napis), której wynikiem jest napis powstały z oryginalnego napisu poprzez dostawienie po każdej literze znaku z danego napisu, ale od końca. Sprawdź działanie funkcji dla podanych poniżej parametrów.
+# Zdefiniuj funkcję czy_palindrom(napis), której wynikiem jest True, jeśli napis jest palindromem, a False w przeciwnym przypadku.
+def czy_palindrom(napis):
+  napis=napis.replace(" ", "")
+  return napis == wspak(napis)
+print(czy_palindrom("kajak"))
+print(czy_palindrom("kamil ślimak"))
+
+# Zdefiniuj funkcję czy_anagram(napis1, napis2), której wynikiem jest True, jeśli napisy są anagramami, a False w przeciwnym przypadku.
+def czy_anagram(napis1, napis2):
+  napis1 = sorted(napis1)
+  napis2 = sorted(napis2)
+  return napis1 == napis2
+print(czy_anagram("arbuz", "burza"))

@@ -14,8 +14,10 @@ print("9. Listy - sekwencyjne typy danych")
 print("10. Liniowe porządkowanie ciągu liczbowego - sortowanie bąbelkowe")
 print("11. Sortowanie przez wstawianie")
 print("12. Algorytmy na tekstach")
+print("13. Szyfrowanie danych metodą podstawieniową")
+print("14. Pozycyjne systemy liczbowe")
 
-wybor = input("Twój wybór (1-10): ")
+wybor = input("Twój wybór (1-14): ")
 
 if wybor == "1":
     os.system("python3 1_etapy_rozwiązywania_problemów_za_pomocą_komputera.py")
@@ -43,5 +45,9 @@ elif wybor == "11":
     os.system("python3 11_Sortownaie_przez_wstawianie.py")
 elif wybor == "12":
     os.system("python3 12_Algorytm_na_tekstach.py")
+elif wybor == "13":
+    os.system("python3 13_Szyfrowanie_danych_metoda_podstawieniowa.py")
+elif wybor == "14":
+    os.system("python3 14_Pozycyjne_systemy_liczbowe.py")
 else:
     print("Nieprawidłowy wybór")
